@@ -16,7 +16,6 @@ public class Contributors {
     public static Map<UUID, Contributor> CONTRIBUTORS = new HashMap<>();
     public static boolean startedLoading = false;
 
-
     public static void loadContributors(String url) {
         if (startedLoading) {
             ConlibutorAPI.LOGGER.warn("Tried to load contributors after already starting");
